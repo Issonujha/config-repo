@@ -16,3 +16,15 @@ cloud:
       locator:
         enabled: true
         lower-case-service-id: true
+
+    # Optional: Route manually if needed
+    # routes:
+    #   - id: auth-service
+    #     uri: lb://auth-service
+    #     predicates:
+    #       - Path=/auth/**
+    #   - id: task-service
+    #     uri: lb://task-service
+    #     predicates:
+    #       - Path=/task/**
+
