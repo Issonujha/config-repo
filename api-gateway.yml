@@ -19,7 +19,7 @@ cloud:
         enabled: true
         lower-case-service-id: true
 
-    # Optional: Route manually if needed
+    # Optional: Route manually for specific services
     routes:
       - id: auth-service
         uri: lb://auth-service
