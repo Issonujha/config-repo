@@ -26,3 +26,16 @@ redis:
   port: 6379
   timeout: 2000
   # password: your_redis_password
+
+mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL}
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: true
