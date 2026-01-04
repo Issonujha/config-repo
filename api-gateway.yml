@@ -23,7 +23,7 @@ spring:
         - id: task-service
           uri: lb://task-service
           predicates:
-            - Path=/tasks/**
+            - Path=/task/**
             
 eureka:
   client:
